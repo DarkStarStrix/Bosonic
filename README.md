@@ -64,7 +64,7 @@ QuTiP_Simulation_9.py
 ## Citation
 
 If you use this work in your research, please cite the following paper:
-A. M. Wandia, "Hydrogen Gas Bose-Einstein Condensates as Quantum Computing Substrates," Self-published, 2023.
+A. M. Wandia, "Hydrogen Gas Bose-Einstein Condensates as Quantum Computing Substrates," Self-published, 2023.
 
 ## Contact
 
