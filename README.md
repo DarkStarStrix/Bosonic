@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The project explores the potential of hydrogen gas Bose-Einstein Condensates (BECs) as a foundational element in the development of quantum computing systems. The study aims to analyze the physical properties of hydrogen BECs, focusing on coherence times, manipulation of quantum states, and scalability.
+The project explores the potential of hydrogen gas Bose-Einstein condensates (BECs) as a foundational element in the development of quantum computing systems. The study aims to analyze the physical properties of hydrogen BECs, focusing on coherence times, manipulation of quantum states, and scalability.
 
 ## Introduction
 
@@ -18,7 +18,7 @@ This project examines hydrogen gas BECs due to hydrogen's simple atomic structur
 ## Results
 
 The study aims to provide empirical data on:
-- The duration of coherence times of hydrogen BECs.
+- The duration of the coherence times of hydrogen BECs.
 - The precision of state manipulation within the BEC.
 - The observed effects of environmental factors on BEC stability.
 
