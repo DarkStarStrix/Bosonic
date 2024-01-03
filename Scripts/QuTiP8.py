@@ -10,6 +10,7 @@ g = 0.1  # Interaction strength (arbitrary units)
 # As an example, using a chain of qubits with nearest-neighbor interactions
 H = sum(qt.tensor([qt.sigmax() if i == j or i == j + 1 else qt.qeye(2) for i in range(N)]) for j in range(N - 1))
 
+
 # Initial state: a product state with all qubits in the ground state
 initial_state = qt.tensor([qt.basis(2, 0) for _ in range(N)])
 

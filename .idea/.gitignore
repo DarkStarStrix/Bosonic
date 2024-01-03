@@ -1,7 +1,7 @@
 # Default ignored files
-/../../ QuTiP Simulation /.idea/shelf/
-/../../ QuTiP Simulation /.idea/workspace.xml
+/shelf/
+/workspace.xml
 # Editor-based HTTP Client requests
-/../../ QuTiP Simulation /.idea/httpRequests/
+/httpRequests/
 # Zeppelin ignored files
-/../../ QuTiP Simulation /.idea/ZeppelinRemoteNotebooks/
+/ZeppelinRemoteNotebooks/
