@@ -1,4 +1,4 @@
-Hydrogen Gas Bose-Einstein Condensate (BEC) for Quantum Computing
+## Hydrogen Gas Bose-Einstein Condensate (BEC) for Quantum Computing
 
 ## Abstract
 
