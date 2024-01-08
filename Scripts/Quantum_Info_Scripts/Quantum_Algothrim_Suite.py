@@ -65,10 +65,6 @@ fig = go.Figure (data=[go.Scatter (x=np.arange (N), y=[measurement_expectation] 
 fig.update_layout (xaxis_title='Atom', yaxis_title='Measurement Expectation')
 fig.show ()
 
-# plot the measurement expectation
-fig = go.Figure (data=[go.Scatter (x=np.arange (N), y=[measurement_expectation] * N, mode='lines')])
-fig.update_layout (xaxis_title='Atom', yaxis_title='Measurement Expectation')
-
 # plot the eigenstates
 fig = go.Figure ()
 for i in range (2 ** N):
