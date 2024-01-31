@@ -1,5 +1,4 @@
-from flask import Flask, render_template, jsonify
-import Quantum_Algorithm_Suite  # Corrected module name
+from flask import Flask, render_template
 
 app = Flask (__name__)
 
@@ -9,25 +8,14 @@ def home():
     return render_template ('home.html')
 
 
-@app.route ('/sass')
-def sass():
-    return render_template ('sass.html')
+@app.route ('/Docs')
+def docs():
+    return render_template ('Docs.html')
 
 
-@app.route ('/badges')
-def badges():
-    return render_template ('badges.html')
-
-
-@app.route ('/collapsible')
-def collapsible():
-    return render_template ('collapsible.html')
-
-
-@app.route ('/api/data')
-def get_data():
-    data = Quantum_Algorithm_Suite.quantum_algorithm_suite (50, 0.5, 1)  # Corrected function name
-    return jsonify (data)
+@app.route ('/Hilbert_Space_Study')
+def hilbert_space_study():
+    return render_template ('Hilbert_Space_Study.html')
 
 
 if __name__ == '__main__':

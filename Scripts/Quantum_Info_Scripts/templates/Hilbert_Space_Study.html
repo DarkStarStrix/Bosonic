@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quantum Algorithm Suite - Hilbert Space Study</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+        }
+        #run-study {
+            margin-left: 10px;
+        }
+        #myCanvas {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Quantum Algorithm Suite</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Docs.html">Documentation</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Hilbert Space Study</h2>
+        <p>Select a script from the dropdown menu and click "Run Study" to visualize the Hilbert space.</p>
+        <div class="centered">
+            <label for="script-selector"></label><select id="script-selector">
+                <option value="" disabled selected>Choose your script</option>
+                <option value="1">Hilbert_Space_Density_Matrix.py</option>
+                <option value="2">Hilbert_Space_Heuristic_Bloch_Sphere.py</option>
+                <option value="3">Hilbert_Space_Heuristic_state_Fidelity.py</option>
+                <option value="4">Wigner_hilbert_space_Heuristic.py</option>
+            </select>
+            <button id="run-study" class="btn waves-effect waves-light">Run Study</button>
+            <canvas id="myCanvas"></canvas>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+        document.getElementById('run-study').addEventListener('click', function() {
+            const script = document.getElementById('script-selector').value;
+            fetch(`/api/run_script?script=${script}`)
+                .then(response => response.json())
+                .then(data => {
+                    const canvas = document.getElementById('myCanvas');
+                    const ctx = canvas.getContext('2d');
+                    // Clear previous results
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    // Display the results in the canvas
+                    data.hilbert_space.forEach(point => {
+                        ctx.fillRect(point[0], point[1], 1, 1);
+                    });
+                });
+        });
+    </script>
+</body>
+</html>
