@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c666c4-f22d-4cae-b4be-c18a04e0b1b6" name="Changes" comment="New frontend / Revamp of Hilbert_Space_Heuristic.py">
-      <change beforePath="$PROJECT_DIR$/.idea/ QuTiP Simulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bosonic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/BEC_Environment/BEC_Simulation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BEC_Environment/BEC_Simulation.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="92c666c4-f22d-4cae-b4be-c18a04e0b1b6" name="Changes" comment="New Hilbert_Space_Heuristic_Hyper_Vectors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,12 +104,16 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2a0idCwAavhBfDlwxNKcovmQClV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "NIXITCH_NIXPKGS_CONFIG": "",
     "NIXITCH_NIX_CONF_DIR": "",
@@ -128,6 +127,8 @@
     "Python.Dataset_Extraction.executor": "Run",
     "Python.Flask_app (1).executor": "Run",
     "Python.Flask_app.executor": "Run",
+    "Python.HSHH.executor": "Run",
+    "Python.HSHH_math.executor": "Run",
     "Python.Hilbert_Space_Density_Matrix (1).executor": "Run",
     "Python.Hilbert_Space_Density_Matrix.executor": "Run",
     "Python.Hilbert_Space_Heursitc.executor": "Run",
@@ -162,8 +163,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Hilbert_Space_Heursitc">
-    <configuration name="Flask_app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.HSHH_math">
+    <configuration name="HSHH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bosonic" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,12 +173,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts/templates" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts/Hibert_Space" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts/templates/Flask_app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Hibert_Space/HSHH.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HSHH_math" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bosonic" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,12 +196,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts/Hibert_Space" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts/Flask_app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Hibert_Space/HSHH_math.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,11 +316,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HSHH_math" />
+        <item itemvalue="Python.HSHH" />
         <item itemvalue="Python.Hilbert_Space_Heursitc" />
         <item itemvalue="Python.Quantum_Algorithm_Suite_Individual" />
         <item itemvalue="Python.Quantum_Algorithm_Suite_Global" />
-        <item itemvalue="Python.Flask_app" />
-        <item itemvalue="Python.Flask_app (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -344,6 +345,7 @@
       <workItem from="1706756508141" duration="26000" />
       <workItem from="1708039682890" duration="1219000" />
       <workItem from="1708971644318" duration="5066000" />
+      <workItem from="1709482763578" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="New Quantum Suite">
       <option name="closed" value="true" />
@@ -417,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706666729717</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New Hilbert_Space_Heuristic_Hyper_Vectors">
+      <option name="closed" value="true" />
+      <created>1709484047798</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709484047798</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,6 +445,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New Quantum Suite" />
     <MESSAGE value="New Hilbert Space Heuristic" />
     <MESSAGE value="Dataset" />
@@ -442,16 +453,19 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Scripts/Quantum_Info_Scripts/Quantum_Algothrim_Suite.py" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Scripts/Quantum_Info_Scripts/Quantum_Algorithm_Suite.py" />
     <MESSAGE value="New frontend / Revamp of Hilbert_Space_Heuristic.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="New frontend / Revamp of Hilbert_Space_Heuristic.py" />
+    <MESSAGE value="New Hilbert_Space_Heuristic_Hyper_Vectors" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Hilbert_Space_Heuristic_Hyper_Vectors" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Dataset_Extraction.coverage" NAME="Dataset_Extraction Coverage Results" MODIFIED="1704729635345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$QuTiP10.coverage" NAME="QuTiP10 Coverage Results" MODIFIED="1703465559962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bosonic$HSHH_math.coverage" NAME="HSHH_math Coverage Results" MODIFIED="1709483096837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Hibert_Space" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Quantum_state_Fidelity.coverage" NAME="Quantum_state_Fidelity Coverage Results" MODIFIED="1704727620260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Hilbert_Space_Heursitc.coverage" NAME="Hilbert_Space_Heursitc Coverage Results" MODIFIED="1706666463262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Flask_app__1_.coverage" NAME="Flask_app (1) Coverage Results" MODIFIED="1706660398091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts/templates" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Hilbert_Space_Heurstic__1_.coverage" NAME="Hilbert_Space_Heurstic (1) Coverage Results" MODIFIED="1704727098584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Quantum_Algothrim_Suite.coverage" NAME="Quantum_Algothrim_Suite Coverage Results" MODIFIED="1705856569347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Quantum_Info_Scripts" />
+    <SUITE FILE_PATH="coverage/Bosonic$HSHH.coverage" NAME="HSHH Coverage Results" MODIFIED="1709483042594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Hibert_Space" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Hilbert_Space_Density_Matrix__1_.coverage" NAME="Hilbert_Space_Density_Matrix (1) Coverage Results" MODIFIED="1704728443474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts/Hibert_Space" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$QuTiP.coverage" NAME="QuTiP Coverage Results" MODIFIED="1703463348942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts" />
     <SUITE FILE_PATH="coverage/_QuTiP_Simulation$Hilbert_Space_Heurstic.coverage" NAME="Hilbert_Space_Heurstic Coverage Results" MODIFIED="1704310541651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
