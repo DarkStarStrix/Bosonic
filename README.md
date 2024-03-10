@@ -51,13 +51,21 @@ Required packages:
 Instructions for running the scripts to generate the plots.
 Run the scripts in the following order:
 QuTiP_Simulation.py
+
 QuTiP_Simulation_2.py
+
 QuTiP_Simulation_3.py
+
 QuTiP_Simulation_4.py
+
 QuTiP_Simulation_5.py
+
 QuTiP_Simulation_6.py
+
 QuTiP_Simulation_7.py
+
 QuTiP_Simulation_8.py
+
 QuTiP_Simulation_9.py
 
 
