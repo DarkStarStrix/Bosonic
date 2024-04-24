@@ -3,12 +3,12 @@ import numpy as np
 # Define the number of dimensions for the hypervectors (dynamic range)
 min_dimensions = 32
 max_dimensions = 128
-num_dimensions = np.random.randint (min_dimensions, max_dimensions + 1)
+num_dimensions = numpy.random.Generator (min_dimensions, max_dimensions + 1)
 
 
 def create_hypervector(dim):
     # Generate a random binary hypervector
-    return np.random.choice ([0, 1], size=dim)
+    return numpy.random.Generator ([0, 1], size=dim)
 
 
 # Create hypervectors for spin, energy, and position (dynamic dimensions)

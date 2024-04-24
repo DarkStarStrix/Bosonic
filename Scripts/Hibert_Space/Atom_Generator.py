@@ -7,7 +7,7 @@ import HSHH
 def generate_atom_data(num_atoms):
     # Create data for each atom
     atom_data = []
-    for i in range (num_atoms):
+    for _ in range (num_atoms):
         # Use the HSHH_math module to generate the atom vector
         atom_vector = HSHH_math.create_hypervector (HSHH_math.num_dimensions)
         atom_data.append ({

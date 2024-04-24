@@ -4,10 +4,10 @@
 # import the needed libraries
 import numpy as np
 import matplotlib.pyplot as plt
-from qutip import *
+from qutip import destroy, basis, mesolve
 from plotly import __version__
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
-from plotly.graph_objs import *
+from plotly.graph_objs import Scatter, Data
 
 # define the parameters
 N = 10

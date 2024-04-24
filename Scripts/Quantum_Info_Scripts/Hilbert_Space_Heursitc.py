@@ -1,4 +1,4 @@
-from qutip import *
+from qutip import thermal_dm, basis, tensor, sigmax, sigmay, sigmaz, expect, qeye
 import plotly.graph_objs as go
 
 
@@ -11,18 +11,18 @@ def compress_quantum_state(state, max_rank):
     return compressed_state
 
 
-def quantum_algorithm_suite(N, T, B):
-    rho = thermal_dm (N, T)
-    qubits = [basis (2, 0) for _ in range (N)]
+def quantum_algorithm_suite(n, t, b):
+    rho = thermal_dm (n, t)
+    qubits = [basis (2, 0) for _ in range (n)]
     bec_state = tensor (qubits)
     single_qubit_operator = sigmax ()
-    spin_jx = tensor ([single_qubit_operator] + [qeye (2) for _ in range (N - 1)])
-    spin_jy = tensor ([sigmay ()] + [qeye (2) for _ in range (N - 1)])
-    spin_jz = tensor ([sigmaz ()] + [qeye (2) for _ in range (N - 1)])
+    spin_jx = tensor ([single_qubit_operator] + [qeye (2) for _ in range (n - 1)])
+    spin_jy = tensor ([sigmay ()] + [qeye (2) for _ in range (n - 1)])
+    spin_jz = tensor ([sigmaz ()] + [qeye (2) for _ in range (n - 1)])
     spin_x = expect (spin_jx, rho)
     spin_y = expect (spin_jy, rho)
     spin_z = expect (spin_jz, rho)
-    measurement_operator = (spin_jx + B * spin_jz)
+    measurement_operator = (spin_jx + b * spin_jz)
     measurement_expectation = expect (measurement_operator, rho)
     eigenvalues, eigenstates = rho.eigenstates ()
     compressed_state = compress_quantum_state (rho, max_rank=10)
@@ -36,7 +36,7 @@ def quantum_algorithm_suite(N, T, B):
     }
 
 
-data = quantum_algorithm_suite (N=10, T=0.5, B=1)
+data = quantum_algorithm_suite (n=10, t=0.5, b=1)
 
 # Plot the results
 # Plot the eigenvalues

@@ -1,9 +1,9 @@
 import numpy as np
-from qutip import *
+from qutip import thermal_dm, tensor, sigmax, sigmay, sigmaz, expect, qeye
 import matplotlib.pyplot as plt
 
 
-def quantum_algorithm_suite(N, T, B):
+def quantum_algorithm_suite(n, t, b):
     # Create a basis for the Hilbert space
     basis = [np.array ([1, 0]), np.array ([0, 1])]
 
@@ -19,7 +19,7 @@ def quantum_algorithm_suite(N, T, B):
     hilbert_space = calculate_hilbert_space (basis, pauli_x)
 
     # create a Bose-Einstein Condensate
-    rho = thermal_dm (N, T)
+    rho = thermal_dm (n, t)
 
     # Define a single-qubit Pauli-X operator
     single_qubit_operator = sigmax ()
@@ -35,7 +35,7 @@ def quantum_algorithm_suite(N, T, B):
     spin_z = expect (spin_jz, rho)
 
     # create the measurement operator for the global qubit
-    measurement_operator = (spin_jx + B * spin_jz)
+    measurement_operator = (spin_jx + b * spin_jz)
 
     # calculate the expectation value of the measurement operator
     measurement_expectation = expect (measurement_operator, rho)
@@ -54,11 +54,11 @@ def quantum_algorithm_suite(N, T, B):
 
 
 # Run your quantum algorithm on a normal quantum computer
-normal_data = quantum_algorithm_suite (N=10, T=0.5, B=1)
+normal_data = quantum_algorithm_suite (n=10, t=0.5, b=1)
 
 # Run your quantum algorithm on a quantum computer with global error correction
 # You need to replace this with your actual function for global error correction
-error_correction_data = quantum_algorithm_suite (N=10, T=0.5, B=1)
+error_correction_data = quantum_algorithm_suite (n=10, t=0.5, b=1)
 
 # Plot the eigenvalues
 plt.figure (figsize=(10, 5))

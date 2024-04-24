@@ -1,9 +1,9 @@
 import numpy as np
-from qutip import *
+from qutip import thermal_dm, tensor, sigmax, sigmay, sigmaz, expect, qeye
 import plotly.graph_objs as go
 
 
-def quantum_algorithm_suite(N, T, B):
+def quantum_algorithm_suite(n, t, b):
     # Create a basis for the Hilbert space
     basis = [np.array ([1, 0]), np.array ([0, 1])]
 
@@ -19,7 +19,7 @@ def quantum_algorithm_suite(N, T, B):
     hilbert_space = calculate_hilbert_space (basis, pauli_x)
 
     # create a Bose-Einstein Condensate
-    rho = thermal_dm (N, T)
+    rho = thermal_dm (n, t)
 
     # Define a single-qubit Pauli-X operator
     single_qubit_operator = sigmax ()
@@ -35,13 +35,13 @@ def quantum_algorithm_suite(N, T, B):
     spin_z = expect (spin_jz, rho)
 
     # create the measurement operator for the global qubit
-    measurement_operator = (spin_jx + B * spin_jz)
+    measurement_operator = (spin_jx + b * spin_jz)
 
     # calculate the expectation value of the measurement operator
     measurement_expectation = expect (measurement_operator, rho)
 
     # calculate the eigenvalues and eigenstates of the state
-    eigenvalues, eigenstates = rho.eigenstates ()
+    _, eigenstates = rho.eigenstates ()
 
     # return the data instead of printing it
     return {
