@@ -78,3 +78,6 @@ A. M. Wandia, "Hydrogen Gas Bose-Einstein Condensates as Quantum Computing Sub
 ## Contact
 
 Allan Murimi Wandia - allanw.mk@gmail.com
+
+
+![image](https://github.com/DarkStarStrix/Bosonic/assets/108637439/ee4f8988-ab3d-42d8-8e39-aa109db93760)
